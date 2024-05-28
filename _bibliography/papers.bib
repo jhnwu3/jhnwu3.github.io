@@ -1,113 +1,63 @@
 ---
 ---
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@Article{Wu2023,
+author={Wu, John
+and Stewart, William C. L.
+and Jayaprakash, Ciriyam
+and Das, Jayajit},
+title={BioNetGMMFit: estimating parameters of a BioNetGen model from time-stamped snapshots of single cells},
+journal={npj Systems Biology and Applications},
+year={2023},
+month={Sep},
+day={22},
+volume={9},
+number={1},
+pages={46},
+abstract={Mechanistic models are commonly employed to describe signaling and gene regulatory kinetics in single cells and cell populations. Recent advances in single-cell technologies have produced multidimensional datasets where snapshots of copy numbers (or abundances) of a large number of proteins and mRNA are measured across time in single cells. The availability of such datasets presents an attractive scenario where mechanistic models are validated against experiments, and estimated model parameters enable quantitative predictions of signaling or gene regulatory kinetics. To empower the systems biology community to easily estimate parameters accurately from multidimensional single-cell data, we have merged a widely used rule-based modeling software package BioNetGen, which provides a user-friendly way to code for mechanistic models describing biochemical reactions, and the recently introduced CyGMM, that uses cell-to-cell differences to improve parameter estimation for such networks, into a single software package: BioNetGMMFit. BioNetGMMFit provides parameter estimates of the model, supplied by the user in the BioNetGen markup language (BNGL), which yield the best fit for the observed single-cell, time-stamped data of cellular components. Furthermore, for more precise estimates, our software generates confidence intervals around each model parameter. BioNetGMMFit is capable of fitting datasets of increasing cell population sizes for any mechanistic model specified in the BioNetGen markup language. By streamlining the process of developing mechanistic models for large single-cell datasets, BioNetGMMFit provides an easily-accessible modeling framework designed for scale and the broader biochemical signaling community.},
+issn={2056-7189},
+doi={10.1038/s41540-023-00299-0},
+url={https://doi.org/10.1038/s41540-023-00299-0}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@article{John2022.03.17.484491,
+	author = {Wu John and William CL Stewart and Jayaprakash Ciriyam and Das Jayajit},
+	title = {Generalized Method of Moments improves parameter estimation in biochemical signaling models of time-stamped single-cell snapshot data},
+	elocation-id = {2022.03.17.484491},
+	year = {2022},
+	doi = {10.1101/2022.03.17.484491},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Motivation Ordinary differential equations are commonly used to model the sub-cellular dynamics of average values of proteins and mRNAs. New single-cell technologies provide cell-to-cell differences in protein/mRNA abundances that allow for the evaluation of higher order moments. However, using this additional information to improve parameter estimation can be challenging since the magnitudes of single-cell abundances can vary widely between proteins/mRNA.Results We employ Generalized Method of Moments (GMM) and Particle Swarm Optimization to address the above challenges in mechanistic modeling of signaling kinetics data. Using synthetic data from linear and non-linear models, we show that the proposed method improves parameter estimation and enables construction of approximate confidence intervals. Furthermore, our approach exploits parallel computation to scale with increasing data size and dimensions. We apply our software CyGMM to estimate parameters in a linear ODE model for publicly available longitudinal single-cell cytometry data for CD8+ T cells. Our results demonstrate substantial improvements for modeling data from single-cell cytometry and RNA-seq experiments.Availability We also make freely available our estimation software CyGMM written in C++ on github (https://github.com/jhnwu3/CyGMM).Contact jayajit{at}gmail.comSupplementary information Supplementary data are available at Bioinformatics online.Competing Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2022/03/19/2022.03.17.484491},
+	eprint = {https://www.biorxiv.org/content/early/2022/03/19/2022.03.17.484491.full.pdf},
+	journal = {bioRxiv}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+
+@inproceedings{
+ockerman2023a,
+title={A Reflection on {AI} Model Selection for Digital Agriculture Image Datasets},
+author={Seth Ockerman and John Wu and Christopher Stewart and Zitchen Zhang},
+booktitle={2nd AAAI Workshop on AI for Agriculture and Food Systems},
+year={2023},
+abbr={AAAI},
+url={https://openreview.net/forum?id=vBSUoUuAYOA}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  selected={true}
+@misc{ockerman2022case,
+      title={A Case for Dataset Specific Profiling}, 
+      author={Seth Ockerman and John Wu and Christopher Stewart},
+      year={2022},
+      eprint={2208.03315},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      journal={arXiv}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@misc{yang2024llm,
+      title={If LLM Is the Wizard, Then Code Is the Wand: A Survey on How Code Empowers Large Language Models to Serve as Intelligent Agents}, 
+      author={Ke Yang and Jiateng Liu and John Wu and Chaoqi Yang and Yi R. Fung and Sha Li and Zixuan Huang and Xu Cao and Xingyao Wang and Yiquan Wang and Heng Ji and Chengxiang Zhai},
+      year={2024},
+      eprint={2401.00812},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
