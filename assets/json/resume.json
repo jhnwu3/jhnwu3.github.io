@@ -1,0 +1,214 @@
+{
+  "basics": {
+    "name": "John Wu",
+    "label": "Computer Science and Engineering Ph.D. Student",
+    "email": "johnwu3@illinois.edu",
+    "phone": "(614) 638-7981",
+    "url": "https://www.linkedin.com/in/johnwu3",
+    "summary": "Computer Science and Engineering Ph.D. student at the University of Illinois Urbana-Champaign with a strong background in research, teaching, and industry experience.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Champaign",
+      "countryCode": "US",
+      "region": "Illinois"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "johnwu3",
+        "url": "https://github.com/johnwu3"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "johnwu3",
+        "url": "https://www.linkedin.com/in/johnwu3"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Sun Lab, Department of Computer Science, University of Illinois Urbana-Champaign",
+      "position": "Research Assistant",
+      "website": "",
+      "startDate": "2023-08-01",
+      "endDate": "",
+      "summary": "Improved automated interpretability methods for clinical text classification using large language models. Cleaned and processed clinical text data with NLP toolkits. Scaled model training on massive clinical text corpus through distributed computing with Dask.",
+      "highlights": []
+    },
+    {
+      "company": "Das Lab, Steve and Cindy Rasmussen Institute for Genomic Medicine",
+      "position": "Research Assistant",
+      "website": "",
+      "startDate": "2021-02-01",
+      "endDate": "",
+      "summary": "Developed parameter estimation software BioNetGMMFit in C/C++ for rule-based and mechanistic modeling. Utilized parallel programming to improve particle swarm optimization performance up to a factor of 10x. Analyzed mass cytometry datasets, generating parameter estimates through generalized method of moments. Trained a convolutional neural network to analyze an image mass cytometry dataset of breast cancer. Used deep learning library, deepXDE, for parameter estimation of PDE models.",
+      "highlights": []
+    },
+    {
+      "company": "Rerout Lab, Department of Computer Science, The Ohio State University",
+      "position": "Research Assistant",
+      "website": "",
+      "startDate": "2022-05-01",
+      "endDate": "",
+      "summary": "Built prototype docker containerization infrastructure for model commons project, allowing for ease of Python code shareability. Benchmarked different particle swarm optimization configurations, contributing to a model benchmarking paper for model commons. Collaborated and communicated plans and necessary data to write benchmarking paper.",
+      "highlights": []
+    },
+    {
+      "company": "Converge Technologies",
+      "position": "Software Intern",
+      "website": "",
+      "startDate": "2020-06-01",
+      "endDate": "2020-08-31",
+      "summary": "Developed Selective Harmonic Elimination Pulse Width Modulation firmware for lab-grade industrial coolers, improving power efficiency. Programmed microcontrollers' interrupt vectors to set up failsafes in case of power failures. Assisted in pre-prototyping research, devising early plans for prototype design and bills of materials. Tested analog-digital camera sensors, ensuring functionality and quality standards.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Hometown Ambassadors, The Ohio State University",
+      "position": "Participant",
+      "website": "",
+      "startDate": "2021-09-01",
+      "endDate": "2021-12-31",
+      "summary": "Presented OSU's engineering program during STEM Outreach activities for high school students. Shared personal experiences in engineering with students and answered specific questions about the program.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Illinois Urbana-Champaign",
+      "area": "Computer Science and Engineering",
+      "studyType": "Doctorate",
+      "startDate": "2023-08-01",
+      "endDate": "",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "The Ohio State University",
+      "area": "Computer Science and Engineering",
+      "studyType": "Bachelor of Science",
+      "startDate": "2019-08-01",
+      "endDate": "2023-05-01",
+      "gpa": "3.947",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Abstract of Distinction, Abigail Wexner Research Institute Research Retreat",
+      "date": "2022-11-01",
+      "awarder": "Abigail Wexner Research Institute",
+      "summary": ""
+    },
+    {
+      "title": "Best of Student Startups Finalist, Keenan Center for Entrepreneurship",
+      "date": "2022-01-01",
+      "awarder": "Keenan Center for Entrepreneurship",
+      "summary": ""
+    },
+    {
+      "title": "Maximus Scholarship",
+      "date": "2019-08-01",
+      "awarder": "The Ohio State University",
+      "summary": ""
+    },
+    {
+      "title": "Dean's List",
+      "date": "2019-08-01",
+      "awarder": "The Ohio State University",
+      "summary": ""
+    }
+  ],
+  "publications": [
+    {
+      "name": "Generalized Method of Moments Improves Parameter Estimation in Biochemical Signaling Models of Time-Stamped Single-Cell Snapshot Data",
+      "publisher": "BioRxiv",
+      "releaseDate": "2022-03-17",
+      "url": "https://www.biorxiv.org/content/10.1101/2022.03.17.484491v1",
+      "summary": "Under review in PLOS Computational Biology"
+    },
+    {
+      "name": "BioNetGMMFit: A Parameter Estimation Tool for BioNetGen Using Single-Cell Snapshot Data from Cell Populations Evolving over Time",
+      "publisher": "BioRxiv",
+      "releaseDate": "2022-12-08",
+      "url": "https://doi.org/10.1101/2022.12.08.519526",
+      "summary": "Submitted to BMC Bioinformatics"
+    },
+    {
+      "name": "A Reflection on AI Model Selection for Digital Agriculture Image Datasets",
+      "publisher": "37th Association for the Advancement of Artificial Intelligence Conference (AAAI-23)",
+      "releaseDate": "2023-01-01",
+      "url": "",
+      "summary": "To appear"
+    },
+    {
+      "name": "A Case for Dataset Specific Profiling",
+      "publisher": "arXiv",
+      "releaseDate": "2022-08-01",
+      "url": "https://arxiv.org/abs/2208.03315",
+      "summary": "Preprint"
+    },
+    {
+      "name": "If LLM Is the Wizard, Then Code Is the Wand: A Survey on How Code Empowers Large Language Models to Serve as Intelligent Agents",
+      "publisher": "",
+      "releaseDate": "2024-01-01",
+      "url": "",
+      "summary": "In progress"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": [
+        "C/C++",
+        "Python",
+        "Java",
+        "MATLAB",
+        "R",
+        "JavaScript",
+        "CSS",
+        "HTML",
+        "Ruby"
+      ]
+    },
+    {
+      "name": "Tools and Frameworks",
+      "keywords": [
+        "Flask",
+        "Ruby on Rails",
+        "Excel",
+        "Microcontrollers",
+        "Docker",
+        "Elastic",
+        "SQL",
+        "OpenMP",
+        "PyTorch"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Research Topics",
+      "keywords": [
+        "Clinical Text Classification",
+        "Large Language Models",
+        "NLP Toolkits",
+        "Distributed Computing",
+        "Parameter Estimation",
+        "Particle Swarm Optimization",
+        "Mass Cytometry",
+        "Convolutional Neural Networks",
+        "PDE Models",
+        "Docker Containerization"
+      ]
+    }
+  ]
+}
