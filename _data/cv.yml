@@ -2,96 +2,172 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: John Wu
+    - name: Email
+      value: johnwu3@illinois.edu
+    - name: Phone
+      value: (614) 638-7981
+    - name: GitHub
+      value: https://github.com/johnwu3
+    - name: LinkedIn
+      value: https://www.linkedin.com/in/johnwu3
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Doctorate in Computer Science and Engineering
+      institution: University of Illinois Urbana-Champaign, Champaign, IL
+      year: Aug 2023 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Advisor: Jimeng Sun
+    - title: Bachelor of Science in Computer Science and Engineering
+      institution: The Ohio State University, Honors Program, Columbus, OH
+      year: May 2023
       description:
-        - Description 1.
-        - Description 2.
+        - GPA: 3.947
+        - Thesis: Optimization for Explainable Modeling
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Assistant
+      institution: Sun Lab, Department of Computer Science, University of Illinois Urbana-Champaign, Champaign, IL
+      year: Aug 2023 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Improved automated interpretability methods for clinical text classification using large language models.
+        - Cleaned and processed clinical text data with NLP toolkits.
+        - Scaled model training on massive clinical text corpus through distributed computing with Dask.
+    - title: Research Assistant
+      institution: Das Lab, Steve and Cindy Rasmussen Institute for Genomic Medicine, Columbus, OH
+      year: February 2021 - Present
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Developed parameter estimation software BioNetGMMFit in C/C++ for rule-based and mechanistic modeling.
+        - Utilized parallel programming to improve particle swarm optimization performance up to a factor of 10x.
+        - Analyzed mass cytometry datasets, generating parameter estimates through generalized method of moments.
+        - Trained a convolutional neural network to analyze an image mass cytometry dataset of breast cancer.
+        - Used deep learning library, deepXDE, for parameter estimation of PDE models.
+    - title: Research Assistant
+      institution: Rerout Lab, Department of Computer Science, The Ohio State University, Columbus, OH
+      year: May 2022 - Present
       description:
+        - Built prototype docker containerization infrastructure for model commons project, allowing for ease of Python code shareability.
+        - Benchmarked different particle swarm optimization configurations, contributing to a model benchmarking paper for model commons.
+        - Collaborated and communicated plans and necessary data to write benchmarking paper.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Publications
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: "Generalized Method of Moments Improves Parameter Estimation in Biochemical Signaling Models of Time-Stamped Single-Cell Snapshot Data"
+      year: 2022
+      description:
+        - Authors: John Wu, William CL Stewart, Ciriyam Jayaprakash, and Jayajit Das
+        - Journal: BioRxiv (Under review in PLOS Computational Biology)
+    - title: "BioNetGMMFit: A Parameter Estimation Tool for BioNetGen Using Single-Cell Snapshot Data from Cell Populations Evolving over Time"
+      year: 2022
+      description:
+        - Authors: John Wu, William CL Stewart, Ciriyam Jayaprakash, and Jayajit Das
+        - Journal: BioRxiv (Submitted to BMC Bioinformatics)
+    - title: "A Reflection on AI Model Selection for Digital Agriculture Image Datasets"
+      year: 2023
+      description:
+        - Authors: Seth Ockerman, John Wu, Zitchen Zhang, et al.
+        - Conference: 37th Association for the Advancement of Artificial Intelligence Conference (AAAI-23)
+    - title: "A Case for Dataset Specific Profiling"
+      year: 2022
+      description:
+        - Authors: Seth Ockerman, John Wu, Christopher Stewart
+        - Journal: arXiv
+    - title: "If LLM Is the Wizard, Then Code Is the Wand: A Survey on How Code Empowers Large Language Models to Serve as Intelligent Agents"
+      year: 2024
+      description:
+        - Authors: Ke Yang, Jiateng Liu, John Wu, Chaoqi Yang, Yi R. Fung, Sha Li, Zixuan Huang, Xu Cao, Xingyao Wang, Yiquan Wang, Heng Ji, & Chengxiang Zhai
+        - Status: In progress
+
+- title: Conference Presentations
+  type: time_table
+  contents:
+    - title: "Generalized Method of Moments improves parameter estimation in biochemical signaling models of time-stamped single-cell snapshot data"
+      year: November 2022
+      description:
+        - Conference: Abigail Wexner Research Institute Research Retreat, Columbus, Ohio, United States
+    - title: "Generalized Method of Moments improves parameter estimation in biochemical signaling models of time-stamped single-cell snapshot data"
+      year: June 2022
+      description:
+        - Conference: qBio Conference, Fort Collins, Colorado, United States
+
+- title: Teaching Experience
+  type: time_table
+  contents:
+    - title: Teaching Assistant, Department of Computer Science
+      institution: College of Engineering, The Ohio State University, Columbus, OH
+      year: Autumn 2021
+      description:
+        - Assisted with instruction of Introduction to C++ course to a class size of 40 students.
+        - Tutored freshman engineering students in office hours.
+        - Graded labs and coding assignments, giving constructive feedback.
+    - title: Counselor
+      institution: Summer Experience Columbus Academy, Gahanna, OH
+      year: Summer 2019
+      description:
+        - Facilitated group activities for students, ranging from kindergarten to 9th grade.
+        - Taught children to regulate and manage their emotions through breathing exercises.
+
+- title: Industry Experience
+  type: time_table
+  contents:
+    - title: Software Intern
+      institution: Converge Technologies, Hilliard, OH
+      year: Summer 2020
+      description:
+        - Developed Selective Harmonic Elimination Pulse Width Modulation firmware for lab-grade industrial coolers, improving power efficiency.
+        - Programmed microcontrollers' interrupt vectors to set up failsafes in case of power failures.
+        - Assisted in pre-prototyping research, devising early plans for prototype design and bills of materials.
+        - Tested analog-digital camera sensors, ensuring functionality and quality standards.
+
+- title: University Service
+  type: time_table
+  contents:
+    - title: Participant
+      institution: Hometown Ambassadors, The Ohio State University, Columbus, OH
+      year: Autumn 2021
+      description:
+        - Presented OSU's engineering program during STEM Outreach activities for high school students.
+        - Shared personal experiences in engineering with students and answered specific questions about the program.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2019-2022
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Dean's List, The Ohio State University
+        - Maximus Scholarship, The Ohio State University
+    - year: 2022
       items:
-        - Max Planck Medal
+        - Abstract of Distinction, Abigail Wexner Research Institute Research Retreat
+        - Best of Student Startups Finalist, Keenan Center for Entrepreneurship
 
-- title: Academic Interests
+- title: Technical Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Languages
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - C/C++
+        - Python
+        - Java
+        - MATLAB
+        - R
+        - JavaScript
+        - CSS
+        - HTML
+        - Ruby
+    - title: Tools and Frameworks
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Flask
+        - Ruby on Rails
+        - Excel
+        - Microcontrollers
+        - Docker
+        - Elastic
+        - SQL
+        - OpenMP
+        - PyTorch
