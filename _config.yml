@@ -10,7 +10,7 @@ email: johnwu3@illinois.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Trustworthy AI4Health
 footer_text: >
-  Wu Inc.
+  Wu 2024
 keywords: Mechanistic Interpretability, AI4Health # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -39,7 +39,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
