@@ -3,7 +3,7 @@
     "name": "John Wu",
     "label": "Computer Science and Engineering Ph.D. Student",
     "email": "johnwu3@illinois.edu",
-    "url": "https://www.linkedin.com/in/johnwu3",
+    "url": "jhnwu3.github.io",
     "summary": "Computer Science and Engineering Ph.D. student at the University of Illinois Urbana-Champaign with a strong background in research, teaching, and industry experience.",
     "location": {
       "address": "",
@@ -16,12 +16,7 @@
       {
         "network": "GitHub",
         "username": "johnwu3",
-        "url": "https://github.com/johnwu3"
-      },
-      {
-        "network": "LinkedIn",
-        "username": "johnwu3",
-        "url": "https://www.linkedin.com/in/johnwu3"
+        "url": "https://github.com/jhnwu3"
       }
     ]
   },
