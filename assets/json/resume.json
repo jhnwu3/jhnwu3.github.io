@@ -155,31 +155,11 @@
   "skills": [
     {
       "name": "Programming Languages",
-      "keywords": [
-        "C/C++",
-        "Python",
-        "Java",
-        "MATLAB",
-        "R",
-        "JavaScript",
-        "CSS",
-        "HTML",
-        "Ruby"
-      ]
+      "keywords": ["C/C++", "Python", "Java", "MATLAB", "R", "JavaScript", "CSS", "HTML", "Ruby"]
     },
     {
       "name": "Tools and Frameworks",
-      "keywords": [
-        "Flask",
-        "Ruby on Rails",
-        "Excel",
-        "Microcontrollers",
-        "Docker",
-        "Elastic",
-        "SQL",
-        "OpenMP",
-        "PyTorch"
-      ]
+      "keywords": ["Flask", "Ruby on Rails", "Excel", "Microcontrollers", "Docker", "Elastic", "SQL", "OpenMP", "PyTorch"]
     }
   ],
   "languages": [
