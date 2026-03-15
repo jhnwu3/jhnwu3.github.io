@@ -26,57 +26,32 @@
     {
       "role": "Graduate Research Assistant",
       "organization": "Sun Lab, University of Illinois Urbana-Champaign",
-      "dates": "Aug 2023 – Present",
-      "highlights": [
-        "Developing interpretability methods for automated clinical coding using dictionary learning (EMNLP 2024)",
-        "Leading the PyHealth Research Initiative (10+ researchers) and a 400+ member Discord community for open-source healthcare AI",
-        "Scaling model training on large clinical text corpora using Dask distributed computing"
-      ]
+      "dates": "Aug 2023 – Present"
     },
     {
       "role": "Applied Scientist Intern",
       "organization": "Amazon",
-      "dates": "Summer 2025",
-      "highlights": [
-        "Worked on pricing agents"
-      ]
+      "dates": "Summer 2025"
     },
     {
-      "role": "Applied Scientist",
+      "role": "Research Intern",
       "organization": "Keiji AI",
-      "dates": "Aug 2025 – May 2026",
-      "highlights": [
-        "Working on autonomous predictive modeling agents"
-      ]
+      "dates": "Aug 2025 – May 2026"
     },
     {
       "role": "Undergraduate Research Assistant",
       "organization": "Das Lab, Nationwide Children's Hospital",
-      "dates": "Feb 2021 – May 2023",
-      "highlights": [
-        "Developed BioNetGMMFit, a parameter estimation software package for mechanistic biological models (C/C++)",
-        "Achieved 10× speedup via parallel particle swarm optimization using OpenMP",
-        "Analyzed mass cytometry datasets using the generalized method of moments"
-      ]
+      "dates": "Feb 2021 – May 2023"
     },
     {
       "role": "Undergraduate Research Assistant",
       "organization": "Rerout Lab, The Ohio State University",
-      "dates": "May 2022 – May 2023",
-      "highlights": [
-        "Built Docker containerization infrastructure for the Model Commons benchmarking project",
-        "Benchmarked particle swarm optimization configurations for agricultural image classification"
-      ]
+      "dates": "May 2022 – May 2023"
     },
     {
       "role": "Software Engineering Intern",
       "organization": "Converge Technologies",
-      "dates": "Summer 2020",
-      "highlights": [
-        "Developed Selective Harmonic Elimination PWM firmware for power electronics controllers",
-        "Programmed microcontroller interrupt vectors and failsafe mechanisms",
-        "Tested analog-digital camera sensor integration"
-      ]
+      "dates": "Summer 2020"
     }
   ],
   "social": [
