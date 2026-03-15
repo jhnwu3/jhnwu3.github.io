@@ -1,11 +1,11 @@
 :root {
-  --bg: #f7f5ef;
-  --paper: #fffefb;
-  --ink: #1d2b2a;
-  --muted: #52605f;
-  --line: #d7d4cc;
-  --accent: #0c5c56;
-  --accent-soft: #d8ece8;
+  --bg: #f2f4f7;
+  --paper: #f9fafb;
+  --ink: #1c2b3a;
+  --muted: #5b6c7e;
+  --line: #cdd5e0;
+  --accent: #c95f26;
+  --accent-soft: #fae3d5;
   --maxw: 980px;
 }
 
@@ -23,8 +23,8 @@ body {
   font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
   color: var(--ink);
   background:
-    radial-gradient(circle at 10% -10%, #ece8de 0%, transparent 45%),
-    radial-gradient(circle at 90% 0%, #ddece8 0%, transparent 35%),
+    radial-gradient(circle at 10% -10%, #dde5f2 0%, transparent 45%),
+    radial-gradient(circle at 90% 0%, #f5ddd0 0%, transparent 35%),
     var(--bg);
   line-height: 1.6;
 }
