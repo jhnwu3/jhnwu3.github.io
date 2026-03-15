@@ -27,9 +27,9 @@
   {
     "title": "DILA: Dictionary Label Attention for Mechanistic Interpretability in High-dimensional Multi-label Medical Coding Prediction",
     "date": "2024-09-16",
-    "venue": "ML4H Workshop",
+    "venue": "ML4H 2024",
     "excerpt": "DILA introduces dictionary label attention to provide mechanistic interpretability for high-dimensional multi-label medical coding prediction tasks.",
-    "citation": "Wu, J., Wu, D., and Sun, J. (2024). DILA: Dictionary Label Attention for Mechanistic Interpretability in High-dimensional Multi-label Medical Coding Prediction. ML4H Workshop, arXiv:2409.10504.",
+    "citation": "Wu, J., Wu, D., and Sun, J. (2024). DILA: Dictionary Label Attention for Mechanistic Interpretability in High-dimensional Multi-label Medical Coding Prediction. ML4H 2024, arXiv:2409.10504.",
     "paperUrl": "https://arxiv.org/pdf/2409.10504",
     "externalUrl": "https://github.com/jhnwu3/DILA"
   },
@@ -54,9 +54,9 @@
   {
     "title": "MIMIC-RD: Can LLMs differentially diagnose rare diseases in real-world clinical settings?",
     "date": "2025-12-18",
-    "venue": "arXiv",
+    "venue": "ML4H Findings 2025",
     "excerpt": "A benchmark evaluating whether large language models can identify rare diseases among multiple diagnostic possibilities. The dataset maps clinical text to Orphanet rather than ICD codes, and testing on 145 patients finds that current state-of-the-art LLMs perform poorly on rare disease differential diagnosis.",
-    "citation": "Eiz AlDin, Z., Wu, J., Fung, J.P., et al. (2025). MIMIC-RD: Can LLMs differentially diagnose rare diseases in real-world clinical settings? arXiv:2601.11559.",
+    "citation": "Eiz AlDin, Z., Wu, J., Fung, J.P., et al. (2025). MIMIC-RD: Can LLMs differentially diagnose rare diseases in real-world clinical settings? ML4H Findings 2025.",
     "paperUrl": "https://arxiv.org/abs/2601.11559",
     "section": "mentorship"
   },
