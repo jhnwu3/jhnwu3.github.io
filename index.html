@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John Wu | CS PhD Student</title>
+  <meta name="description" content="Personal page for John Wu, CS PhD student at UIUC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="site-wrap header-inner">
+      <nav class="nav" aria-label="Main navigation">
+        <a data-page="home" href="index.html">About</a>
+        <a data-page="publications" href="publications.html">Publications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-wrap">
+    <section class="hero fade-up">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1 id="name">John Wu</h1>
+          <p class="muted" id="headline"></p>
+          <div class="pill-row">
+            <span class="pill" id="location"></span>
+            <a class="pill inline-link" id="email" href="mailto:johnwu3@illinois.edu"></a>
+          </div>
+          <div id="bio"></div>
+          <p class="section-label">Research Interests</p>
+          <div class="pill-row" id="interests"></div>
+          <div class="quick-links" id="social">
+            <a class="button-link" id="cv-link" href="files/cv.pdf">Download CV</a>
+          </div>
+          <div id="page-error"></div>
+        </div>
+        <div class="hero-photo">
+          <img src="images/profile.png" alt="John Wu" class="profile-photo">
+        </div>
+      </div>
+    </section>
+
+    <section class="hero fade-up page-section" id="projects-section" style="display:none">
+      <h2>Projects</h2>
+      <div id="projects-list" class="list-grid"></div>
+    </section>
+
+    <section class="hero fade-up page-section" id="experience-section" style="display:none">
+      <h2>Professional Experience</h2>
+      <div id="experience-list" class="list-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-wrap">Copyright <span id="year"></span> John Wu</div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

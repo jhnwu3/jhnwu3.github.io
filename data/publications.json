@@ -1,0 +1,93 @@
+[
+  {
+    "title": "PyHealth 2.0: A Comprehensive Open-Source Toolkit for Accessible and Reproducible Clinical Deep Learning",
+    "date": "2026-01-23",
+    "venue": "arXiv",
+    "excerpt": "PyHealth 2.0 unifies 15+ datasets, 20+ clinical tasks, and 25+ models within a single framework supporting EHR, signals, and imaging. Key improvements include up to 39× faster processing, 20× reduced memory usage, five medical coding standards, conformal prediction for uncertainty quantification, and multiple interpretability approaches.",
+    "citation": "Wu, J., Fan, Y., Wu, Z., et al. (2026). PyHealth 2.0: A Comprehensive Open-Source Toolkit for Accessible and Reproducible Clinical Deep Learning. arXiv:2601.16414.",
+    "paperUrl": "https://arxiv.org/abs/2601.16414"
+  },
+  {
+    "title": "Beyond Label Attention: Transparency in Language Models for Automated Medical Coding via Dictionary Learning",
+    "date": "2024-11-01",
+    "venue": "EMNLP 2024",
+    "excerpt": "We propose a dictionary learning approach to improve transparency in language models for automated ICD medical coding, moving beyond label attention mechanisms to provide more mechanistically interpretable predictions.",
+    "citation": "Wu, J., Wu, D., and Sun, J. (2024). Beyond Label Attention: Transparency in Language Models for Automated Medical Coding via Dictionary Learning. EMNLP 2024.",
+    "paperUrl": "https://openreview.net/pdf?id=0KqfWdjkUM",
+    "externalUrl": "https://github.com/jhnwu3/BeyondLabelAttention"
+  },
+  {
+    "title": "DILA: Dictionary Label Attention for Mechanistic Interpretability in High-dimensional Multi-label Medical Coding Prediction",
+    "date": "2024-09-16",
+    "venue": "ML4H Workshop",
+    "excerpt": "DILA introduces dictionary label attention to provide mechanistic interpretability for high-dimensional multi-label medical coding prediction tasks.",
+    "citation": "Wu, J., Wu, D., and Sun, J. (2024). DILA: Dictionary Label Attention for Mechanistic Interpretability in High-dimensional Multi-label Medical Coding Prediction. ML4H Workshop, arXiv:2409.10504.",
+    "paperUrl": "https://arxiv.org/pdf/2409.10504",
+    "externalUrl": "https://github.com/jhnwu3/DILA"
+  },
+  {
+    "title": "If LLM Is the Wizard, Then Code Is the Wand: A Survey on How Code Empowers Large Language Models to Serve as Intelligent Agents",
+    "date": "2024-01-01",
+    "venue": "arXiv",
+    "excerpt": "A survey examining how code generation and execution capabilities empower large language models to function as intelligent agents across diverse tasks.",
+    "citation": "Yang, K., Liu, J., Wu, J., et al. (2024). If LLM Is the Wizard, Then Code Is the Wand. arXiv:2401.00812.",
+    "paperUrl": "https://arxiv.org/pdf/2401.00812",
+    "externalUrl": "https://arxiv.org/abs/2401.00812"
+  },
+  {
+    "title": "Making Conformal Predictors Robust in Healthcare Settings: a Case Study on EEG Classification",
+    "date": "2026-02-23",
+    "venue": "arXiv",
+    "excerpt": "This work addresses uncertainty quantification in clinical EEG seizure classification using conformal prediction. The paper finds that standard conformal approaches fail under distribution shift across patient populations, and demonstrates that personalized calibration strategies can improve coverage by over 20 percentage points.",
+    "citation": "Chatterjee, A., Razin, S.S., Wu, J., et al. (2026). Making Conformal Predictors Robust in Healthcare Settings: a Case Study on EEG Classification. arXiv:2602.19483.",
+    "paperUrl": "https://arxiv.org/abs/2602.19483",
+    "section": "mentorship"
+  },
+  {
+    "title": "MIMIC-RD: Can LLMs differentially diagnose rare diseases in real-world clinical settings?",
+    "date": "2025-12-18",
+    "venue": "arXiv",
+    "excerpt": "A benchmark evaluating whether large language models can identify rare diseases among multiple diagnostic possibilities. The dataset maps clinical text to Orphanet rather than ICD codes, and testing on 145 patients finds that current state-of-the-art LLMs perform poorly on rare disease differential diagnosis.",
+    "citation": "Eiz AlDin, Z., Wu, J., Fung, J.P., et al. (2025). MIMIC-RD: Can LLMs differentially diagnose rare diseases in real-world clinical settings? arXiv:2601.11559.",
+    "paperUrl": "https://arxiv.org/abs/2601.11559",
+    "section": "mentorship"
+  },
+  {
+    "title": "BioNetGMMFit: estimating parameters of a BioNetGen model from time-stamped snapshots of single cells",
+    "date": "2023-09-22",
+    "venue": "npj Systems Biology and Applications",
+    "excerpt": "BioNetGMMFit merges the BioNetGen rule-based modeling framework with the CyGMM parameter estimation method to enable accurate parameter fitting from multidimensional single-cell time-stamped data.",
+    "citation": "Wu, J., Stewart, W.C.L., Jayaprakash, C., and Das, J. (2023). BioNetGMMFit. npj Systems Biology and Applications, 9(1), 46.",
+    "paperUrl": "https://www.nature.com/articles/s41540-023-00299-0",
+    "externalUrl": "https://github.com/jhnwu3/BioNetGMMFit",
+    "section": "history"
+  },
+  {
+    "title": "A Reflection on AI Model Selection for Digital Agriculture Image Datasets",
+    "date": "2023-02-01",
+    "venue": "2nd AAAI Workshop on AI for Agriculture and Food Systems",
+    "excerpt": "An empirical reflection on the factors influencing AI model selection for digital agriculture image datasets, with insights into dataset-specific profiling and benchmarking.",
+    "citation": "Ockerman, S., Wu, J., Stewart, C., and Zhang, Z. (2023). A Reflection on AI Model Selection for Digital Agriculture Image Datasets. 2nd AAAI Workshop on AI for Agriculture and Food Systems.",
+    "paperUrl": "https://openreview.net/forum?id=vBSUoUuAYOA",
+    "section": "history"
+  },
+  {
+    "title": "A Case for Dataset Specific Profiling",
+    "date": "2022-08-05",
+    "venue": "arXiv",
+    "excerpt": "We argue for dataset-specific profiling as a methodology to better understand data characteristics and guide model selection in machine learning pipelines.",
+    "citation": "Ockerman, S., Wu, J., and Stewart, C. (2022). A Case for Dataset Specific Profiling. arXiv:2208.03315.",
+    "paperUrl": "https://arxiv.org/abs/2208.03315",
+    "section": "history"
+  },
+  {
+    "title": "Generalized Method of Moments improves parameter estimation in biochemical signaling models of time-stamped single-cell snapshot data",
+    "date": "2022-03-19",
+    "venue": "bioRxiv",
+    "excerpt": "We apply Generalized Method of Moments (GMM) with Particle Swarm Optimization to improve parameter estimation in mechanistic ODE models of signaling kinetics from single-cell cytometry data.",
+    "citation": "Wu, J., Stewart, W.C.L., Jayaprakash, C., and Das, J. (2022). Generalized Method of Moments improves parameter estimation in biochemical signaling models. bioRxiv.",
+    "paperUrl": "https://www.biorxiv.org/content/early/2022/03/19/2022.03.17.484491.full.pdf",
+    "externalUrl": "https://github.com/jhnwu3/CyGMM",
+    "section": "history"
+  }
+]

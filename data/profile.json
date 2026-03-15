@@ -1,0 +1,97 @@
+{
+  "name": "John Wu",
+  "headline": "CS PhD Student at UIUC · AI for Healthcare",
+  "location": "Urbana, Illinois",
+  "email": "johnwu3@illinois.edu",
+  "bio": [
+    "Hello! My name is John Wu, a Ph.D. student in the Computer Science Department at the <a href=\"https://cs.illinois.edu/\">University of Illinois Urbana-Champaign</a>, advised by Professor <a href=\"https://www.sunlab.org/\">Jimeng Sun</a>. I am supported by the <a href=\"https://www.nsfgrfp.org/\">NSF GRFP</a>.",
+    "My research focuses on the <strong>transparent deployment of AI systems in healthcare</strong>, spanning model interpretability, agentic systems for clinical workflows, and open-source healthcare AI development toolkits. I believe that for AI to be safely adopted in high-stakes clinical settings, it must be both effective and explainable.",
+    "I also lead the <strong><a href=\"https://discord.gg/mpb835EHaX\">PyHealth Discord community</a></strong> (400+ members) and run the <strong>PyHealth Research Initiative</strong> — a program of 10+ researchers actively conducting open-source, reproducible healthcare AI research built on top of <a href=\"https://pyhealth.readthedocs.io/en/latest/\">PyHealth</a>."
+  ],
+  "interests": [
+    "Model Interpretability",
+    "Agentic Systems for Healthcare",
+    "Healthcare AI Toolkits",
+    "Trustworthy AI"
+  ],
+  "projects": [
+    {
+      "name": "PyHealth",
+      "url": "https://pyhealth.readthedocs.io/en/latest/",
+      "github": "https://github.com/sunlabuiuc/PyHealth",
+      "description": "An open-source Python toolkit for clinical deep learning, unifying 15+ datasets, 20+ clinical tasks, and 25+ models across EHR, signals, and imaging modalities. PyHealth 2.0 features up to 39× faster processing, 20× reduced memory usage, conformal prediction for uncertainty quantification, and multiple interpretability methods. I maintain a 400+ member Discord community around PyHealth and lead the PyHealth Research Initiative — a program of 10+ researchers conducting open-source, reproducible healthcare AI research."
+    }
+  ],
+  "experience": [
+    {
+      "role": "Graduate Research Assistant",
+      "organization": "Sun Lab, University of Illinois Urbana-Champaign",
+      "dates": "Aug 2023 – Present",
+      "highlights": [
+        "Developing interpretability methods for automated clinical coding using dictionary learning (EMNLP 2024)",
+        "Leading the PyHealth Research Initiative (10+ researchers) and a 400+ member Discord community for open-source healthcare AI",
+        "Scaling model training on large clinical text corpora using Dask distributed computing"
+      ]
+    },
+    {
+      "role": "Applied Scientist Intern",
+      "organization": "Amazon",
+      "dates": "Summer 2025",
+      "highlights": [
+        "Worked on pricing agents"
+      ]
+    },
+    {
+      "role": "Applied Scientist",
+      "organization": "Keiji AI",
+      "dates": "Aug 2025 – May 2026",
+      "highlights": [
+        "Working on autonomous predictive modeling agents"
+      ]
+    },
+    {
+      "role": "Undergraduate Research Assistant",
+      "organization": "Das Lab, Nationwide Children's Hospital",
+      "dates": "Feb 2021 – May 2023",
+      "highlights": [
+        "Developed BioNetGMMFit, a parameter estimation software package for mechanistic biological models (C/C++)",
+        "Achieved 10× speedup via parallel particle swarm optimization using OpenMP",
+        "Analyzed mass cytometry datasets using the generalized method of moments"
+      ]
+    },
+    {
+      "role": "Undergraduate Research Assistant",
+      "organization": "Rerout Lab, The Ohio State University",
+      "dates": "May 2022 – May 2023",
+      "highlights": [
+        "Built Docker containerization infrastructure for the Model Commons benchmarking project",
+        "Benchmarked particle swarm optimization configurations for agricultural image classification"
+      ]
+    },
+    {
+      "role": "Software Engineering Intern",
+      "organization": "Converge Technologies",
+      "dates": "Summer 2020",
+      "highlights": [
+        "Developed Selective Harmonic Elimination PWM firmware for power electronics controllers",
+        "Programmed microcontroller interrupt vectors and failsafe mechanisms",
+        "Tested analog-digital camera sensor integration"
+      ]
+    }
+  ],
+  "social": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/jhnwu3"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/johnwu3"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=u36V3mAAAAAJ&hl=en"
+    }
+  ],
+  "cvUrl": "files/cv.pdf"
+}
