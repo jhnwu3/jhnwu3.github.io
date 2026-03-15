@@ -8,6 +8,14 @@
     "paperUrl": "https://arxiv.org/abs/2601.16414"
   },
   {
+    "title": "RDMA: Cost Effective Agent-Driven Rare Disease Discovery within Electronic Health Record Systems",
+    "date": "2025-07-14",
+    "venue": "arXiv",
+    "excerpt": "Rare diseases affect 1 in 10 Americans, yet standard ICD coding systems fail to capture these conditions in EHRs, leaving critical information buried in clinical notes. RDMA is an agentic framework for rare disease discovery that processes clinical notes locally to address privacy concerns, achieving a 30% improvement in F1 performance while reducing inference costs tenfold.",
+    "citation": "Wu, J., Cross, A., and Sun, J. (2025). RDMA: Cost Effective Agent-Driven Rare Disease Discovery within Electronic Health Record Systems. arXiv:2507.15867.",
+    "paperUrl": "https://arxiv.org/abs/2507.15867"
+  },
+  {
     "title": "Beyond Label Attention: Transparency in Language Models for Automated Medical Coding via Dictionary Learning",
     "date": "2024-11-01",
     "venue": "EMNLP 2024",

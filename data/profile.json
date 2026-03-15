@@ -6,7 +6,7 @@
   "bio": [
     "Hello! My name is John Wu, a Ph.D. student in the Computer Science Department at the <a href=\"https://cs.illinois.edu/\">University of Illinois Urbana-Champaign</a>, advised by Professor <a href=\"https://www.sunlab.org/\">Jimeng Sun</a>. I am supported by the <a href=\"https://www.nsfgrfp.org/\">NSF GRFP</a>.",
     "My research focuses on the <strong>transparent deployment of AI systems in healthcare</strong>, spanning model interpretability, agentic systems for clinical workflows, and open-source healthcare AI development toolkits. I believe that for AI to be safely adopted in high-stakes clinical settings, it must be both effective and explainable.",
-    "I also lead the <strong><a href=\"https://discord.gg/mpb835EHaX\">PyHealth Discord community</a></strong> (400+ members) and run the <strong>PyHealth Research Initiative</strong> — a program of 10+ researchers actively conducting open-source, reproducible healthcare AI research built on top of <a href=\"https://pyhealth.readthedocs.io/en/latest/\">PyHealth</a>."
+    "I also lead the <strong><a href=\"https://discord.gg/mpb835EHaX\">PyHealth community</a></strong> (400+ members) and run the <strong>PyHealth Research Initiative</strong> — a program of 10+ researchers actively conducting open-source, reproducible healthcare AI research built on top of <a href=\"https://pyhealth.readthedocs.io/en/latest/\">PyHealth</a>."
   ],
   "interests": [
     "Model Interpretability",
@@ -26,22 +26,50 @@
     {
       "role": "Graduate Research Assistant",
       "organization": "Sun Lab, University of Illinois Urbana-Champaign",
-      "dates": "Aug 2023 – Present"
+      "dates": "Aug 2023 – Present",
+      "highlights": [
+        "Improved auto-interpretability methods for clinical text classification by over 40% with large language models.",
+        "Cleaned and processed clinical text data with NLP toolkits from the de-identified large scale MIMIC dataset.",
+        "Increased coverage of conformal prediction of EEG classification by over 10% using distribution shift approaches.",
+        "Improved LLM capabilities in low-resource disease detection through quantization and retrieval augmented generation.",
+        "Lead maintainer of PyHealth, an open-source toolkit for AI applications in healthcare."
+      ]
     },
     {
-      "role": "Applied Scientist Intern",
-      "organization": "Amazon",
-      "dates": "Summer 2025"
+      "role": "Research Intern",
+      "organization": "Google Health",
+      "dates": "Summer 2026"
     },
     {
       "role": "Research Intern",
       "organization": "Keiji AI",
-      "dates": "Aug 2025 – May 2026"
+      "dates": "Aug 2025 – May 2026",
+      "highlights": [
+        "Developed agentic framework to automate clinical predictive modeling with PyHealth.",
+        "Designed PyHealth MCP tool framework for AI agent use for automated clinical predictive modeling.",
+        "Built frontend UI elements to support clinical predictive modeling within the Data Science Agent product."
+      ]
+    },
+    {
+      "role": "Applied Scientist Intern",
+      "organization": "Amazon",
+      "dates": "Summer 2025",
+      "highlights": [
+        "Designed agentic framework for price reasoning on Amazon webstore, improving atypical pricing classification performance by 20%.",
+        "Constructed agentic tools around product graphs for more intelligent price reasoning.",
+        "Revised onboarding technical documents and AWS setup for Bedrock access in EC2 instances."
+      ]
     },
     {
       "role": "Undergraduate Research Assistant",
       "organization": "Das Lab, Nationwide Children's Hospital",
-      "dates": "Feb 2021 – May 2023"
+      "dates": "Feb 2021 – Aug 2023",
+      "highlights": [
+        "Published a first-author paper in npj Systems Biology and Applications.",
+        "Developed parameter estimation software BioNetGMMFit in C/C++ for mechanistic modeling under noisy conditions.",
+        "Improved particle swarm optimization speed by 10× using OpenMP parallel programming.",
+        "Accelerated parameter estimation of agent-based models by 1000× through surrogate modeling with deep neural networks in PyTorch."
+      ]
     },
     {
       "role": "Undergraduate Research Assistant",
@@ -53,6 +81,13 @@
       "organization": "Converge Technologies",
       "dates": "Summer 2020"
     }
+  ],
+  "awards": [
+    "Graduate Research Fellowship (NSF GRFP), National Science Foundation · 2025–2028",
+    "Abstract of Distinction, Abigail Wexner Research Institute Research Retreat · 2022",
+    "Best of Student Startups Finalist, Keenan Center for Entrepreneurship · 2022",
+    "Maximus Scholarship, The Ohio State University · 2019–2022",
+    "Dean's List, The Ohio State University · 2019–2022"
   ],
   "social": [
     {

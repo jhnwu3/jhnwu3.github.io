@@ -1,23 +1,9 @@
 (function () {
   "use strict";
 
-  const page = document.body.dataset.page || "home";
-
-  const dataFiles = {
-    home: "data/profile.json",
-    publications: "data/publications.json",
-    talks: "data/talks.json",
-    teaching: "data/teaching.json",
-    files: "data/files.json",
-  };
-
-  async function loadContent() {
-    const url = dataFiles[page];
-    if (!url) return null;
+  async function loadJson(url) {
     const response = await fetch(url, { cache: "no-store" });
-    if (!response.ok) {
-      throw new Error(`Failed to load ${url}`);
-    }
+    if (!response.ok) throw new Error(`Failed to load ${url}`);
     return response.json();
   }
 
@@ -123,34 +109,40 @@
     }
 
     // Render experience section
-    if (Array.isArray(profile.experience) && profile.experience.length > 0) {
-      const expSection = byId("experience-section");
-      const expGrid = byId("experience-list");
-      if (expSection && expGrid) {
-        expSection.style.display = "";
-        profile.experience.forEach((item) => {
-          const card = document.createElement("article");
-          card.className = "card";
-          card.innerHTML = `
-            <div class="card-head">
-              <h3>${item.role}</h3>
-              <span class="meta">${item.dates}</span>
-            </div>
-            <p class="meta">${item.organization}</p>
-          `;
-          if (Array.isArray(item.highlights) && item.highlights.length > 0) {
-            const ul = document.createElement("ul");
-            ul.className = "exp-highlights";
-            item.highlights.forEach((point) => {
-              const li = document.createElement("li");
-              li.textContent = point;
-              ul.appendChild(li);
-            });
-            card.appendChild(ul);
-          }
-          expGrid.appendChild(card);
-        });
-      }
+    const expGrid = byId("experience-list");
+    if (expGrid && Array.isArray(profile.experience)) {
+      profile.experience.forEach((item) => {
+        const card = document.createElement("article");
+        card.className = "card";
+        card.innerHTML = `
+          <div class="card-head">
+            <h3>${item.role}</h3>
+            <span class="meta">${item.dates}</span>
+          </div>
+          <p class="meta">${item.organization}</p>
+        `;
+        if (Array.isArray(item.highlights) && item.highlights.length > 0) {
+          const ul = document.createElement("ul");
+          ul.className = "exp-highlights";
+          item.highlights.forEach((point) => {
+            const li = document.createElement("li");
+            li.textContent = point;
+            ul.appendChild(li);
+          });
+          card.appendChild(ul);
+        }
+        expGrid.appendChild(card);
+      });
+    }
+
+    // Render awards section
+    const awardsList = byId("awards-list");
+    if (awardsList && Array.isArray(profile.awards)) {
+      profile.awards.forEach((award) => {
+        const li = document.createElement("li");
+        li.textContent = award;
+        awardsList.appendChild(li);
+      });
     }
   }
 
@@ -242,129 +234,20 @@
     });
   }
 
-  function renderTalks(talks) {
-    const grid = byId("talk-list");
-    talks.forEach((item) => {
-      const card = document.createElement("article");
-      card.className = "card";
-      card.innerHTML = `
-        <div class="card-head">
-          <h3>${item.title}</h3>
-          <span class="meta">${formatDate(item.date)}</span>
-        </div>
-        <p class="meta">${item.type} · ${item.venue} · ${item.location}</p>
-        <p>${item.details}</p>
-      `;
-      if (item.link) {
-        const link = document.createElement("a");
-        link.href = item.link;
-        link.textContent = "More information";
-        link.className = "inline-link";
-        card.appendChild(link);
-      }
-      grid.appendChild(card);
-    });
-  }
-
-  function renderTeaching(teaching) {
-    const grid = byId("teaching-list");
-    teaching.forEach((item) => {
-      const card = document.createElement("article");
-      card.className = "card";
-      const heading = [item.venue, item.location].filter(Boolean).join(", ");
-      const dateText = item.date || "";
-
-      card.innerHTML = `
-        <div class="card-head">
-          <h3>${heading}</h3>
-          <span class="meta">${dateText}</span>
-        </div>
-      `;
-
-      if (Array.isArray(item.highlights) && item.highlights.length > 0) {
-        const label = document.createElement("p");
-        label.className = "teaching-section-label";
-        label.textContent = "Highlights";
-        card.appendChild(label);
-        const highlightList = document.createElement("ul");
-        highlightList.className = "teaching-highlights";
-        item.highlights.forEach((point) => {
-          const li = document.createElement("li");
-          li.textContent = point;
-          highlightList.appendChild(li);
-        });
-        card.appendChild(highlightList);
-      }
-
-      if (Array.isArray(item.courses) && item.courses.length > 0) {
-        const label = document.createElement("p");
-        label.className = "teaching-section-label";
-        label.textContent = "Courses";
-        card.appendChild(label);
-        const coursesList = document.createElement("ul");
-        coursesList.className = "teaching-courses";
-        item.courses.forEach((course) => {
-          const li = document.createElement("li");
-          li.textContent = course;
-          coursesList.appendChild(li);
-        });
-        card.appendChild(coursesList);
-      }
-
-      if (item.details) {
-        const p = document.createElement("p");
-        p.textContent = item.details;
-        card.appendChild(p);
-      }
-
-      grid.appendChild(card);
-    });
-  }
-
-  function renderFiles(files) {
-    const grid = byId("file-list");
-    files.forEach((item) => {
-      const card = document.createElement("article");
-      card.className = "card";
-      card.innerHTML = `
-        <div class="card-head">
-          <h3>${item.title}</h3>
-        </div>
-        <p class="meta">${item.description}</p>
-      `;
-      const link = document.createElement("a");
-      link.href = item.path;
-      link.textContent = "Open file";
-      link.className = "inline-link";
-      card.appendChild(link);
-      grid.appendChild(card);
-    });
-  }
-
-  function markActiveNav() {
-    const links = document.querySelectorAll(".nav a");
-    links.forEach((a) => {
-      if (a.dataset.page === page) {
-        a.classList.add("active");
-      }
-    });
-  }
-
   async function init() {
     setFooterYear();
-    markActiveNav();
 
     try {
-      const data = await loadContent();
-      if (page === "home") renderHome(data);
-      if (page === "publications") renderPublications(data);
-      if (page === "talks") renderTalks(data);
-      if (page === "teaching") renderTeaching(data);
-      if (page === "files") renderFiles(data);
+      const [profile, publications] = await Promise.all([
+        loadJson("data/profile.json"),
+        loadJson("data/publications.json"),
+      ]);
+      renderHome(profile);
+      renderPublications(publications);
     } catch (err) {
       const target = byId("page-error");
       if (target) {
-        target.textContent = `Could not load content. Please check data/${page === "home" ? "profile" : page}.json.`;
+        target.textContent = "Could not load content. Please check data/profile.json and data/publications.json.";
         target.className = "warning";
       }
       console.error(err);
