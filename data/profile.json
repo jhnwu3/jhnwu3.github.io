@@ -17,7 +17,7 @@
   "projects": [
     {
       "name": "PyHealth",
-      "url": "https://pyhealth.readthedocs.io/en/latest/",
+      "url": "pyhealth.html",
       "github": "https://github.com/sunlabuiuc/PyHealth",
       "description": "An open-source Python toolkit for clinical deep learning, unifying 15+ datasets, 20+ clinical tasks, and 25+ models across EHR, signals, and imaging modalities. PyHealth 2.0 features up to 39× faster processing, 20× reduced memory usage, conformal prediction for uncertainty quantification, and multiple interpretability methods. I maintain a 400+ member Discord community around PyHealth and lead the PyHealth Research Initiative — a program of 10+ researchers conducting open-source, reproducible healthcare AI research."
     }
