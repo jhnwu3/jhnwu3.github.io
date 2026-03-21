@@ -88,13 +88,14 @@
           const nameHtml = proj.url
             ? `<a href="${proj.url}" class="inline-link" target="_blank" rel="noopener noreferrer">${proj.name}</a>`
             : proj.name;
-          const logoHtml = proj.logo
-            ? `<img src="${proj.logo}" alt="${proj.name} logo" class="project-card-logo">`
-            : "";
+          const headContent = proj.logo
+            ? proj.url
+              ? `<a href="${proj.url}" target="_blank" rel="noopener noreferrer"><img src="${proj.logo}" alt="${proj.name} logo" class="project-card-logo"></a>`
+              : `<img src="${proj.logo}" alt="${proj.name} logo" class="project-card-logo">`
+            : `<h3>${nameHtml}</h3>`;
           card.innerHTML = `
-            ${logoHtml}
             <div class="card-head">
-              <h3>${nameHtml}</h3>
+              ${headContent}
             </div>
             <p>${proj.description}</p>
           `;

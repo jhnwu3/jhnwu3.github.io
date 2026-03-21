@@ -198,7 +198,7 @@ li {
   animation: rise 500ms ease;
 }
 
-.project-card-logo { height: 36px; width: auto; margin-bottom: 0.5rem; display: block; }
+.project-card-logo { height: 44px; width: auto; display: block; }
 
 .card-head {
   display: flex;
