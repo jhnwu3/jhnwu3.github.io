@@ -48,6 +48,8 @@
       pointer-events: none;
     }
 
+    .ph-logo { height: 52px; width: auto; margin-bottom: 0.75rem; display: block; }
+
     .ph-eyebrow {
       font-size: 0.8rem;
       font-weight: 600;
@@ -412,29 +414,6 @@
     .tok-op  { color: #cdd6f4; }
     .tok-cm  { color: #585b70; font-style: italic; }
 
-    /* ── What's New ── */
-    .whats-new {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-left: 3px solid var(--accent);
-      border-radius: 12px;
-      padding: 1.1rem 1.3rem;
-      display: flex;
-      gap: 0.85rem;
-      align-items: flex-start;
-    }
-    .whats-new-icon {
-      flex-shrink: 0;
-      width: 32px; height: 32px;
-      border-radius: 8px;
-      background: rgba(201,95,38,0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .whats-new-body h3 { margin: 0 0 0.3rem; font-size: 0.95rem; }
-    .whats-new-body p { margin: 0; font-size: 0.86rem; color: var(--muted); line-height: 1.5; }
-
     /* ── Linkable stat cards ── */
     a.stat-card {
       text-decoration: none;
@@ -468,6 +447,7 @@
     <!-- ── Hero ── -->
     <section class="ph-hero">
       <p class="ph-eyebrow">Open-Source Healthcare AI</p>
+      <img src="images/pyhealth-logo.png" alt="PyHealth" class="ph-logo">
       <h1>PyHealth</h1>
       <p class="ph-tagline">A Python toolkit for clinical deep learning — unifying datasets, tasks, and models across electronic health records, physiological signals, and medical imaging.</p>
       <div class="ph-install-row">
@@ -542,19 +522,6 @@
         <div class="stat-number">20×</div>
         <div class="stat-label">Less memory than<br>pandarallel</div>
       </a>
-    </section>
-
-    <!-- ── What's New ── -->
-    <section class="page-section fade-up">
-      <div class="whats-new">
-        <div class="whats-new-icon">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-        </div>
-        <div class="whats-new-body">
-          <h3>PyHealth 2.0 is here</h3>
-          <p>The latest release adds genomics support (ClinVar, COSMIC, TCGA), the Prostate-VarBench benchmark, and a fully unified multimodal API — all with up to 39× faster data loading. <a href="https://arxiv.org/pdf/2601.16414" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none; font-weight:500;">Read the paper →</a></p>
-        </div>
-      </div>
     </section>
 
     <!-- ── Quickstart ── -->

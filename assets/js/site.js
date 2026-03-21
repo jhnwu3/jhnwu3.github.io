@@ -88,7 +88,11 @@
           const nameHtml = proj.url
             ? `<a href="${proj.url}" class="inline-link" target="_blank" rel="noopener noreferrer">${proj.name}</a>`
             : proj.name;
+          const logoHtml = proj.logo
+            ? `<img src="${proj.logo}" alt="${proj.name} logo" class="project-card-logo">`
+            : "";
           card.innerHTML = `
+            ${logoHtml}
             <div class="card-head">
               <h3>${nameHtml}</h3>
             </div>
