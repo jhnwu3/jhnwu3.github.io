@@ -286,6 +286,167 @@
     @media (max-width: 380px) {
       .pipeline-grid { grid-template-columns: 1fr; }
     }
+
+    /* ── Pip install bar ── */
+    .ph-install-row {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1.2rem;
+      position: relative;
+      z-index: 1;
+    }
+    .ph-install-cmd {
+      font-family: "IBM Plex Mono", "Menlo", monospace;
+      font-size: 0.92rem;
+      background: rgba(0,0,0,0.35);
+      color: #a6e3a1;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.1);
+      letter-spacing: 0.01em;
+    }
+    .ph-copy-btn {
+      background: rgba(255,255,255,0.09);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 7px;
+      color: rgba(255,255,255,0.75);
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.42rem 0.8rem;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .ph-copy-btn:hover { background: rgba(255,255,255,0.15); color: white; }
+    .ph-copy-btn.copied { background: rgba(74,222,128,0.15); color: #4ade80; border-color: rgba(74,222,128,0.3); }
+
+    /* ── Badges ── */
+    .ph-badges {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    .ph-badges a { display: inline-block; line-height: 0; }
+    .ph-badges img { border-radius: 4px; }
+
+    /* ── Quickstart code section ── */
+    .ph-quickstart {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .ph-quickstart-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      padding: 1.1rem 1.4rem 0.9rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .ph-quickstart-header h3 {
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .ph-quickstart-actions {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .ph-quickstart-copy {
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      border: 1.5px solid var(--line);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .ph-quickstart-copy:hover { border-color: var(--accent); color: var(--accent); }
+    .ph-quickstart-copy.copied { border-color: #16a34a; color: #16a34a; }
+    .colab-inline-link {
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: #c95f26;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      border: 1.5px solid rgba(201,95,38,0.3);
+      background: rgba(201,95,38,0.06);
+      transition: opacity 0.15s;
+    }
+    .colab-inline-link:hover { opacity: 0.8; }
+    .ph-code {
+      background: #0f1923;
+      padding: 1.2rem 1.4rem;
+      margin: 0;
+      font-family: "IBM Plex Mono", "Menlo", monospace;
+      font-size: 0.82rem;
+      line-height: 1.7;
+      color: #cdd6f4;
+      overflow-x: auto;
+      white-space: pre;
+    }
+    .tok-kw  { color: #89b4fa; }
+    .tok-cl  { color: #cba6f7; }
+    .tok-fn  { color: #89dceb; }
+    .tok-str { color: #a6e3a1; }
+    .tok-num { color: #fab387; }
+    .tok-op  { color: #cdd6f4; }
+    .tok-cm  { color: #585b70; font-style: italic; }
+
+    /* ── What's New ── */
+    .whats-new {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--accent);
+      border-radius: 12px;
+      padding: 1.1rem 1.3rem;
+      display: flex;
+      gap: 0.85rem;
+      align-items: flex-start;
+    }
+    .whats-new-icon {
+      flex-shrink: 0;
+      width: 32px; height: 32px;
+      border-radius: 8px;
+      background: rgba(201,95,38,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .whats-new-body h3 { margin: 0 0 0.3rem; font-size: 0.95rem; }
+    .whats-new-body p { margin: 0; font-size: 0.86rem; color: var(--muted); line-height: 1.5; }
+
+    /* ── Linkable stat cards ── */
+    a.stat-card {
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s, box-shadow 0.15s, transform 0.12s;
+    }
+    a.stat-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 14px rgba(201,95,38,0.12);
+      transform: translateY(-2px);
+    }
+    a.stat-card .stat-label { color: var(--muted); }
   </style>
 </head>
 <body>
@@ -309,10 +470,17 @@
       <p class="ph-eyebrow">Open-Source Healthcare AI</p>
       <h1>PyHealth</h1>
       <p class="ph-tagline">A Python toolkit for clinical deep learning — unifying datasets, tasks, and models across electronic health records, physiological signals, and medical imaging.</p>
+      <div class="ph-install-row">
+        <span class="ph-install-cmd">pip install pyhealth</span>
+        <button class="ph-copy-btn" onclick="copyInstall(this)" aria-label="Copy install command">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Copy
+        </button>
+      </div>
       <div class="ph-cta-row">
-        <a href="https://pyhealth.readthedocs.io/en/latest/" class="ph-btn primary" target="_blank" rel="noopener">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          Documentation
+        <a href="https://pyhealth.readthedocs.io/en/latest/how_to_get_started.html" class="ph-btn primary" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Get Started in 5 Minutes
         </a>
         <a href="https://github.com/sunlabuiuc/PyHealth" class="ph-btn outline" target="_blank" rel="noopener">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -327,22 +495,33 @@
           Research Initiative
         </a>
       </div>
+      <div class="ph-badges">
+        <a href="https://github.com/sunlabuiuc/pyhealth/stargazers" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/github/stars/sunlabuiuc/pyhealth.svg?style=flat-square&labelColor=1c2b3a&color=c95f26&label=Stars" alt="GitHub stars">
+        </a>
+        <a href="https://pypi.org/project/pyhealth/" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/pypi/v/pyhealth.svg?style=flat-square&labelColor=1c2b3a&color=5a9fd4&label=PyPI" alt="PyPI version">
+        </a>
+        <a href="https://pepy.tech/project/pyhealth" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/pypi/dm/pyhealth?style=flat-square&labelColor=1c2b3a&color=5a9fd4&label=Downloads%2Fmo" alt="Monthly downloads">
+        </a>
+      </div>
     </section>
 
     <!-- ── Stats ── -->
     <section class="stats-row page-section">
-      <div class="stat-card">
-        <div class="stat-number">15+</div>
+      <a href="datasets.html" class="stat-card">
+        <div class="stat-number">21</div>
         <div class="stat-label">Clinical<br>Datasets</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">20+</div>
+      </a>
+      <a href="tasks.html" class="stat-card">
+        <div class="stat-number">26+</div>
         <div class="stat-label">Clinical<br>Tasks</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">25+</div>
+      </a>
+      <a href="https://pyhealth.readthedocs.io/en/latest/api/models.html" class="stat-card" target="_blank" rel="noopener">
+        <div class="stat-number">33+</div>
         <div class="stat-label">ML<br>Models</div>
-      </div>
+      </a>
       <div class="stat-card">
         <div class="stat-number">400+</div>
         <div class="stat-label">Discord<br>Members</div>
@@ -351,13 +530,63 @@
         <div class="stat-number">10+</div>
         <div class="stat-label">Active<br>Researchers</div>
       </div>
-      <div class="stat-card">
+      <div class="stat-card" title="39x faster data loading vs pandas-based approaches">
         <div class="stat-number">39×</div>
-        <div class="stat-label">Faster<br>Processing</div>
+        <div class="stat-label">Faster than<br>pandas</div>
       </div>
-      <div class="stat-card">
+      <div class="stat-card" title="20x less peak memory vs PyHealth 1.x">
         <div class="stat-number">20×</div>
-        <div class="stat-label">Less<br>Memory</div>
+        <div class="stat-label">Less memory<br>than v1</div>
+      </div>
+    </section>
+
+    <!-- ── What's New ── -->
+    <section class="page-section fade-up">
+      <div class="whats-new">
+        <div class="whats-new-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <div class="whats-new-body">
+          <h3>PyHealth 2.0 is here</h3>
+          <p>The latest release adds genomics support (ClinVar, COSMIC, TCGA), the Prostate-VarBench benchmark, and a fully unified multimodal API — all with up to 39× faster data loading. <a href="https://arxiv.org/pdf/2601.16414" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none; font-weight:500;">Read the paper →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Quickstart ── -->
+    <section class="page-section fade-up">
+      <h2 class="section-h2">5-Stage Pipeline in &lt;15 Lines</h2>
+      <p class="section-sub">The same pattern works for any task — swap the dataset and task class to move between mortality, readmission, drug recommendation, or imaging.</p>
+      <div class="ph-quickstart">
+        <div class="ph-quickstart-header">
+          <h3>Mortality prediction on MIMIC-III</h3>
+          <div class="ph-quickstart-actions">
+            <button class="ph-quickstart-copy" onclick="copyCode(this)" aria-label="Copy code">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Copy
+            </button>
+            <a href="https://colab.research.google.com/drive/1b9xRbxUz-HLzxsrvxdsdJ868ajGQCY6U?usp=sharing" class="colab-inline-link" target="_blank" rel="noopener">Open in Colab →</a>
+          </div>
+        </div>
+        <pre class="ph-code" id="quickstartCode"><span class="tok-kw">from</span> pyhealth.datasets <span class="tok-kw">import</span> <span class="tok-cl">MIMIC3Dataset</span>
+<span class="tok-kw">from</span> pyhealth.tasks <span class="tok-kw">import</span> <span class="tok-cl">MortalityPredictionMIMIC3</span>
+<span class="tok-kw">from</span> pyhealth.datasets <span class="tok-kw">import</span> <span class="tok-fn">split_by_patient</span>, <span class="tok-fn">get_dataloader</span>
+<span class="tok-kw">from</span> pyhealth.models <span class="tok-kw">import</span> <span class="tok-cl">Transformer</span>
+<span class="tok-kw">from</span> pyhealth.trainer <span class="tok-kw">import</span> <span class="tok-cl">Trainer</span>
+
+<span class="tok-cm"># 1. Load data</span>
+dataset <span class="tok-op">=</span> <span class="tok-cl">MIMIC3Dataset</span>(root<span class="tok-op">=</span><span class="tok-str">"data/"</span>, tables<span class="tok-op">=</span>[<span class="tok-str">"DIAGNOSES_ICD"</span>, <span class="tok-str">"PROCEDURES_ICD"</span>])
+samples <span class="tok-op">=</span> dataset.<span class="tok-fn">set_task</span>(<span class="tok-cl">MortalityPredictionMIMIC3</span>())
+
+<span class="tok-cm"># 2. Split &amp; load</span>
+train_ds, val_ds, test_ds <span class="tok-op">=</span> <span class="tok-fn">split_by_patient</span>(samples, [<span class="tok-num">0.8</span>, <span class="tok-num">0.1</span>, <span class="tok-num">0.1</span>])
+train_loader <span class="tok-op">=</span> <span class="tok-fn">get_dataloader</span>(train_ds, batch_size<span class="tok-op">=</span><span class="tok-num">32</span>, shuffle<span class="tok-op">=</span><span class="tok-num">True</span>)
+
+<span class="tok-cm"># 3. Train</span>
+model <span class="tok-op">=</span> <span class="tok-cl">Transformer</span>(dataset<span class="tok-op">=</span>samples)
+trainer <span class="tok-op">=</span> <span class="tok-cl">Trainer</span>(model<span class="tok-op">=</span>model)
+trainer.<span class="tok-fn">train</span>(train_loader, val_loader, epochs<span class="tok-op">=</span><span class="tok-num">50</span>, monitor<span class="tok-op">=</span><span class="tok-str">"pr_auc"</span>)
+trainer.<span class="tok-fn">evaluate</span>(test_loader)</pre>
       </div>
     </section>
 
@@ -377,7 +606,7 @@
         <a href="https://pyhealth.readthedocs.io/en/latest/api/datasets.html" class="pipeline-card" target="_blank" rel="noopener">
           <div class="pipeline-step">02</div>
           <div class="pipeline-name">pyhealth.datasets</div>
-          <p class="pipeline-desc">Loaders for MIMIC-III, eICU, AUMC, and 15+ more.</p>
+          <p class="pipeline-desc">Loaders for MIMIC-III/IV, eICU, OMOP, and 17+ more.</p>
         </a>
         <a href="https://pyhealth.readthedocs.io/en/latest/api/tasks.html" class="pipeline-card" target="_blank" rel="noopener">
           <div class="pipeline-step">03</div>
@@ -395,7 +624,7 @@
         <a href="https://pyhealth.readthedocs.io/en/latest/api/models.html" class="pipeline-card" target="_blank" rel="noopener">
           <div class="pipeline-step">05</div>
           <div class="pipeline-name">pyhealth.models</div>
-          <p class="pipeline-desc">25+ clinical ML models across EHR, signals, and imaging.</p>
+          <p class="pipeline-desc">33+ clinical ML models across EHR, signals, and imaging.</p>
         </a>
         <a href="https://pyhealth.readthedocs.io/en/latest/api/trainer.html" class="pipeline-card" target="_blank" rel="noopener">
           <div class="pipeline-step">06</div>
@@ -481,7 +710,50 @@
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function copyInstall(btn) {
+      navigator.clipboard.writeText('pip install pyhealth').then(() => {
+        btn.classList.add('copied');
+        btn.innerHTML = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Copied!';
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          btn.innerHTML = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy';
+        }, 2000);
+      });
+    }
+
+    function copyCode(btn) {
+      const code = `from pyhealth.datasets import MIMIC3Dataset
+from pyhealth.tasks import MortalityPredictionMIMIC3
+from pyhealth.datasets import split_by_patient, get_dataloader
+from pyhealth.models import Transformer
+from pyhealth.trainer import Trainer
+
+# 1. Load data
+dataset = MIMIC3Dataset(root="data/", tables=["DIAGNOSES_ICD", "PROCEDURES_ICD"])
+samples = dataset.set_task(MortalityPredictionMIMIC3())
+
+# 2. Split & load
+train_ds, val_ds, test_ds = split_by_patient(samples, [0.8, 0.1, 0.1])
+train_loader = get_dataloader(train_ds, batch_size=32, shuffle=True)
+
+# 3. Train
+model = Transformer(dataset=samples)
+trainer = Trainer(model=model)
+trainer.train(train_loader, val_loader, epochs=50, monitor="pr_auc")
+trainer.evaluate(test_loader)`;
+      navigator.clipboard.writeText(code).then(() => {
+        btn.classList.add('copied');
+        btn.innerHTML = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Copied!';
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          btn.innerHTML = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy';
+        }, 2000);
+      });
+    }
+  </script>
 
 </body>
 </html>
