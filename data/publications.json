@@ -2,18 +2,20 @@
   {
     "title": "PyHealth 2.0: A Comprehensive Open-Source Toolkit for Accessible and Reproducible Clinical Deep Learning",
     "date": "2026-01-23",
-    "venue": "arXiv",
+    "venue": "ICML 2026",
     "excerpt": "PyHealth 2.0 unifies 15+ datasets, 20+ clinical tasks, and 25+ models within a single framework supporting EHR, signals, and imaging. Key improvements include up to 39× faster processing, 20× reduced memory usage, five medical coding standards, conformal prediction for uncertainty quantification, and multiple interpretability approaches.",
-    "citation": "Wu, J., Fan, Y., Wu, Z., et al. (2026). PyHealth 2.0: A Comprehensive Open-Source Toolkit for Accessible and Reproducible Clinical Deep Learning. arXiv:2601.16414.",
-    "paperUrl": "https://arxiv.org/abs/2601.16414"
+    "citation": "Wu, J., Fan, Y., Wu, Z., et al. (2026). PyHealth 2.0: A Comprehensive Open-Source Toolkit for Accessible and Reproducible Clinical Deep Learning. ICML 2026.",
+    "paperUrl": "https://icml.cc/virtual/2026/poster/62466",
+    "externalUrl": "https://github.com/sunlabuiuc/pyhealth"
   },
   {
     "title": "RDMA: Cost Effective Agent-Driven Rare Disease Discovery within Electronic Health Record Systems",
     "date": "2025-07-14",
-    "venue": "arXiv",
+    "venue": "npj Digital Medicine",
     "excerpt": "Rare diseases affect 1 in 10 Americans, yet standard ICD coding systems fail to capture these conditions in EHRs, leaving critical information buried in clinical notes. RDMA is an agentic framework for rare disease discovery that processes clinical notes locally to address privacy concerns, achieving a 30% improvement in F1 performance while reducing inference costs tenfold.",
-    "citation": "Wu, J., Cross, A., and Sun, J. (2025). RDMA: Cost Effective Agent-Driven Rare Disease Discovery within Electronic Health Record Systems. arXiv:2507.15867.",
-    "paperUrl": "https://arxiv.org/abs/2507.15867"
+    "citation": "Wu, J., Cross, A., and Sun, J. (2026). RDMA: Cost Effective Agent-Driven Rare Disease Discovery within Electronic Health Record Systems. npj Digital Medicine.",
+    "paperUrl": "https://www.nature.com/articles/s41746-026-03070-x",
+    "externalUrl": "https://github.com/jhnwu3/RDMA"
   },
   {
     "title": "Beyond Label Attention: Transparency in Language Models for Automated Medical Coding via Dictionary Learning",
