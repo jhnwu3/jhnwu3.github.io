@@ -174,10 +174,12 @@
     function renderCard(item) {
       const card = document.createElement("article");
       card.className = "card";
+      const isPreprint = /^(arxiv|biorxiv|medrxiv)$/i.test(item.venue);
       card.innerHTML = `
+        <span class="venue-tag${isPreprint ? " venue-tag--preprint" : ""}">${isPreprint ? `Preprint · ${item.venue}` : item.venue}</span>
         <div class="card-head">
           <h3>${item.title}</h3>
-          <span class="meta">${formatDate(item.date)} · ${item.venue}</span>
+          <span class="meta">${formatDate(item.date)}</span>
         </div>
         <p>${item.excerpt}</p>
         <p class="meta">${item.citation}</p>

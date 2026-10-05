@@ -5,7 +5,7 @@
   "email": "johnwu3@illinois.edu",
   "bio": [
     "Hello! My name is John Wu, a Ph.D. student in the Computer Science Department at the <a href=\"https://cs.illinois.edu/\">University of Illinois Urbana-Champaign</a>, advised by Professor <a href=\"https://www.sunlab.org/\">Jimeng Sun</a>. I am supported by the <a href=\"https://www.nsfgrfp.org/\">NSF GRFP</a>.",
-    "My research focuses on the <strong>transparent deployment of AI systems in healthcare</strong>, spanning model interpretability, agentic systems for clinical workflows, and open-source healthcare AI development toolkits. I believe that for AI to be safely adopted in high-stakes clinical settings, it must be both effective and explainable.",
+    "My goal is to <strong>reduce the friction of building clinical AI systems</strong>, whether that be through the development of more effective interpretability methods, agentic systems, or building usable open-source software.",
     "I also lead the <strong><a href=\"https://discord.gg/mpb835EHaX\">PyHealth community</a></strong> (400+ members) and run the <strong>PyHealth Research Initiative</strong> — a program of 10+ researchers actively conducting open-source, reproducible healthcare AI research built on top of <a href=\"https://pyhealth.readthedocs.io/en/latest/\">PyHealth</a>."
   ],
   "interests": [
